@@ -45,7 +45,6 @@ function stopTimer() {
 }
 
 function resetTimer() {
- 
   elapsedTime = 1500000;
   startButton.disabled = false; // Re-enable the start button
   setTimerDisplay(25, 0, 0);
@@ -54,3 +53,5 @@ function resetTimer() {
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);
+
+// need to redo this with the requestAnimationFrame
